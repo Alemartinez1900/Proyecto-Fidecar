@@ -9,9 +9,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table (name = "clientes")       
-
-public class Cliente implements Serializable {
+@Table (name = "cliente") 
+public class Cliente implements Serializable{
     
         private static final long serialVersionUID = 1L;
     
@@ -26,7 +25,6 @@ public class Cliente implements Serializable {
     private String fechaRegistro;
     private String direccion;
     private boolean activos;
-
     public Cliente() {
     }
 
@@ -38,8 +36,5 @@ public class Cliente implements Serializable {
         this.direccion = direccion;
         this.activos = activos;
     }
-    
-
-      
     
 }
